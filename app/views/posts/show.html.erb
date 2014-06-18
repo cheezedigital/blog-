@@ -1,3 +1,6 @@
 <h1><%= @post.title %>></h1>
 <h2><%= @post.author %></h2>
 <p><%= @post.description %></p>
+
+<%= link_to 'Edit Post', edit_post_path(@post.id) %>
+<%= link_to 'Delete Post', @post, method: :delete %>
