@@ -1,3 +1,3 @@
 class Post < ActiveRecord::Base
-  belongs_to :post 
+  belongs_to :comments, dependent: :destroy 
 end
